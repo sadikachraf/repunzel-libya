@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+<title>Rapunzel رابونزيل ليبيا | السر البرازيلي لشعر يغار منه الجميع</title>
+<meta name="description" content="Rapunzel — التونك البرازيلي لتكثيف الشعر ووقف التساقط. جينكو بيلوبا + كافيين + مستخلصات نباتية. نتائج حقيقية في 8 أسابيع.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/IMAGE_3-optimized.webp">
+
+<style>
+:root{
+  --cream:#F8F1E7;--cream-2:#F2E8D9;--cream-3:#EADCC5;--paper:#FDFBF7;
+  --terracotta:#B8442C;--terracotta-d:#8F321E;--terracotta-l:#E8C9BE;--terracotta-bg:#F8E3DA;
+  --forest:#2D4A2B;--forest-d:#1A2F19;--forest-l:#6B8B5E;
+  --gold:#B8860B;--gold-l:#D4A942;--gold-bg:#FAF0D8;
+  --ink:#1C1410;--ink-2:#2E2419;--espresso:#3D2817;
+  --red-alert:#C8321E;--green-go:#2F7A3F;
+  --text:#2A1A0F;--text-mid:#5C3D28;--text-soft:#8B6E5A;
+  --line:#D9C5A8;--line-soft:#E8D9BF;
+  --shadow-sm:0 1px 3px rgba(45,20,10,.08);
+  --shadow-md:0 4px 16px rgba(45,20,10,.1);
+  --shadow-lg:0 12px 40px rgba(45,20,10,.15);
+  --shadow-xl:0 24px 60px rgba(45,20,10,.2);
+  --f-display:'Cormorant Garamond',serif;
+  --f-body:'Tajawal',sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:var(--f-body);background:var(--cream);color:var(--text);
+  direction:rtl;overflow-x:hidden;padding-bottom:90px;line-height:1.6;
+  background-image:
+    radial-gradient(circle at 20% 30%,rgba(184,134,11,.04) 0%,transparent 50%),
+    radial-gradient(circle at 80% 70%,rgba(184,68,44,.03) 0%,transparent 50%);
+}
+img{max-width:100%;height:auto;display:block;}
+a{text-decoration:none;color:inherit;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+::selection{background:var(--terracotta);color:var(--cream);}
+
+/* Animations */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1);}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-stagger > *{opacity:0;transform:translateY(16px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1);}
+.reveal-stagger.visible > *{opacity:1;transform:translateY(0);}
+.reveal-stagger.visible > *:nth-child(1){transition-delay:.05s;}
+.reveal-stagger.visible > *:nth-child(2){transition-delay:.12s;}
+.reveal-stagger.visible > *:nth-child(3){transition-delay:.19s;}
+.reveal-stagger.visible > *:nth-child(4){transition-delay:.26s;}
+.reveal-stagger.visible > *:nth-child(5){transition-delay:.33s;}
+.reveal-stagger.visible > *:nth-child(6){transition-delay:.4s;}
+
+@keyframes pulse-ring{0%,100%{box-shadow:0 0 0 0 rgba(184,68,44,.55);}50%{box-shadow:0 0 0 16px rgba(184,68,44,0);}}
+.pulse{animation:pulse-ring 2s infinite;}
+@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+@keyframes blink-dot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.85);}}
+@keyframes shine{0%{transform:translateX(-100%);}100%{transform:translateX(100%);}}
+@keyframes glow-free{0%,100%{box-shadow:0 0 0 0 rgba(47,122,63,0);}50%{box-shadow:0 0 14px rgba(47,122,63,.6);}}
+@keyframes float-up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* ===== LIVE ORDER NOTIF ===== */
+.live-notif{
+  position:fixed;bottom:92px;right:12px;z-index:998;
+  background:var(--paper);border:1px solid var(--line-soft);
+  border-radius:14px;padding:12px 36px 12px 14px;
+  display:flex;align-items:center;gap:10px;
+  box-shadow:var(--shadow-lg);max-width:300px;
+  opacity:0;transform:translateY(16px);
+  transition:opacity .4s,transform .4s;pointer-events:none;
+}
+.live-notif.show{opacity:1;transform:translateY(0);pointer-events:auto;}
+.live-notif-icon{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--forest);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;flex-shrink:0;
+}
+.live-notif-text{font-size:12px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:2px;}
+.live-notif-text em{color:var(--terracotta);font-style:normal;}
+.live-notif-time{font-size:10px;color:var(--text-soft);font-weight:500;}
+.live-notif-close{
+  position:absolute;top:6px;left:6px;
+  width:20px;height:20px;border-radius:50%;
+  background:var(--cream-2);color:var(--text-mid);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:900;
+}
+@media(max-width:400px){.live-notif{right:8px;left:8px;max-width:none;}}
+
+/* ===== ANNOUNCEMENT BAR ===== */
+.ann-bar{
+  background:var(--ink);color:var(--cream);padding:9px 0;
+  overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--gold);
+  position:relative;
+}
+.ann-bar::before,.ann-bar::after{
+  content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none;
+}
+.ann-bar::before{right:0;background:linear-gradient(270deg,var(--ink),transparent);}
+.ann-bar::after{left:0;background:linear-gradient(90deg,var(--ink),transparent);}
+.ann-inner{display:inline-flex;animation:ticker 32s linear infinite;}
+.ann-inner span{
+  display:inline-flex;align-items:center;gap:8px;padding:0 32px;
+  font-size:12px;font-weight:600;color:#E8C88C;letter-spacing:.3px;
+}
+.ann-inner span em{color:#F5D282;font-style:normal;font-weight:800;}
+.ann-inner span::before{content:'✦';color:var(--gold-l);font-size:10px;}
+
+/* ===== HEADER ===== */
+.header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(253,251,247,.97);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line-soft);
+  padding:10px 18px;display:flex;align-items:center;justify-content:space-between;
+}
+.logo-wrap{display:flex;align-items:center;gap:8px;}
+.logo-mark{
+  width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,var(--terracotta),var(--terracotta-d));
+  display:flex;align-items:center;justify-content:center;
+  color:var(--cream);font-family:var(--f-display);
+  font-weight:700;font-size:18px;font-style:italic;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.15),0 2px 6px rgba(184,68,44,.3);
+}
+.logo-text{
+  font-family:var(--f-display);font-size:22px;font-weight:600;font-style:italic;
+  color:var(--ink);letter-spacing:-.5px;line-height:1;
+}
+.h-btn{
+  background:var(--ink);color:var(--cream);
+  font-weight:700;font-size:13px;padding:9px 16px;border-radius:100px;
+  transition:background .2s,transform .1s;
+}
+.h-btn:hover{background:var(--terracotta);}
+.h-btn:active{transform:scale(.97);}
+
+/* ===== HERO ===== */
+.hero{
+  padding:28px 20px 40px;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse at top right,rgba(184,68,44,.06) 0%,transparent 60%),
+    radial-gradient(ellipse at bottom left,rgba(184,134,11,.06) 0%,transparent 60%),var(--cream);
+}
+.hero-live{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--paper);border:1px solid var(--line-soft);
+  border-radius:100px;padding:6px 14px;
+  font-size:12px;font-weight:600;color:var(--text-mid);
+  margin-bottom:16px;box-shadow:var(--shadow-sm);
+}
+.hero-live .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--green-go);
+  animation:blink-dot 1.5s infinite;flex-shrink:0;
+}
+.hero-live b{color:var(--terracotta);font-weight:800;}
+
+.hero-eyebrow{
+  font-family:var(--f-display);font-size:13px;font-weight:500;font-style:italic;
+  color:var(--terracotta);letter-spacing:3px;text-transform:uppercase;
+  margin-bottom:8px;display:flex;align-items:center;gap:10px;
+}
+.hero-eyebrow::before,.hero-eyebrow::after{
+  content:'';flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--terracotta-l),transparent);
+}
+
+.hero h1{
+  font-size:clamp(28px,8vw,40px);font-weight:900;color:var(--ink);
+  line-height:1.18;letter-spacing:-.5px;margin-bottom:14px;
+}
+.hero h1 .script{
+  font-family:var(--f-display);font-weight:500;font-style:italic;
+  color:var(--terracotta);font-size:1.15em;
+}
+.hero h1 em{font-style:normal;color:var(--terracotta);position:relative;}
+.hero h1 em::after{
+  content:'';position:absolute;bottom:-2px;right:0;left:0;height:3px;
+  background:var(--gold);border-radius:2px;opacity:.5;
+}
+.hero-sub{font-size:15px;color:var(--text-mid);line-height:1.75;margin-bottom:22px;}
+.hero-sub b{color:var(--ink);font-weight:700;}
+
+.hero-img-frame{
+  position:relative;border-radius:20px;overflow:hidden;
+  box-shadow:var(--shadow-xl);margin-bottom:22px;border:4px solid var(--paper);
+}
+.hero-img-frame img{width:100%;display:block;}
+.hero-img-stamp{
+  position:absolute;top:14px;right:14px;
+  background:rgba(28,20,16,.92);color:var(--gold-l);
+  padding:6px 12px;border-radius:100px;
+  font-size:10px;font-weight:800;letter-spacing:1.5px;
+  border:1px solid var(--gold);backdrop-filter:blur(4px);
+}
+.hero-img-caption{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(0deg,rgba(28,20,16,.88) 0%,transparent 100%);
+  padding:28px 16px 14px;color:var(--cream);
+}
+.hero-img-caption-name{
+  font-family:var(--f-display);font-style:italic;
+  font-size:15px;font-weight:600;margin-bottom:2px;
+}
+.hero-img-caption-text{font-size:11px;opacity:.85;}
+.hero-img-caption-text em{color:var(--gold-l);font-style:normal;}
+
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px;}
+.stat{
+  background:var(--paper);border:1px solid var(--line-soft);
+  border-radius:14px;padding:14px 8px;text-align:center;
+  box-shadow:var(--shadow-sm);position:relative;overflow:hidden;
+}
+.stat::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--terracotta);}
+.stat-n{font-size:22px;font-weight:900;color:var(--ink);display:block;margin-bottom:3px;letter-spacing:-.5px;}
+.stat-l{font-size:9px;color:var(--text-soft);font-weight:700;letter-spacing:.3px;text-transform:uppercase;}
+
+.btn-primary{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  background:linear-gradient(180deg,var(--terracotta) 0%,var(--terracotta-d) 100%);
+  color:var(--cream);font-weight:900;font-size:17px;
+  text-align:center;padding:18px 20px;border-radius:14px;margin-bottom:12px;
+  letter-spacing:.2px;
+  box-shadow:0 6px 18px rgba(184,68,44,.32),inset 0 1px 0 rgba(255,255,255,.2);
+  position:relative;overflow:hidden;transition:transform .12s;
+}
+.btn-primary::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.22) 50%,transparent 100%);
+  transform:translateX(-100%);
+}
+.btn-primary:hover::after{animation:shine 1.3s;}
+.btn-primary:active{transform:scale(.98);}
+
+.hero-trust-row{
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  font-size:12px;color:var(--text-mid);font-weight:600;flex-wrap:wrap;
+}
+.hero-trust-row span{display:flex;align-items:center;gap:4px;}
+.hero-trust-row b{color:var(--green-go);font-weight:800;}
+
+/* ===== TRUST STRIP ===== */
+.trust-strip{
+  background:var(--ink);padding:18px;
+  border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);
+}
+.trust-strip-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
+.ts-item{color:var(--cream);text-align:center;display:flex;flex-direction:column;align-items:center;gap:5px;}
+.ts-icon{font-size:22px;color:var(--gold-l);filter:drop-shadow(0 2px 4px rgba(184,134,11,.4));}
+.ts-label{font-size:11px;font-weight:700;}
+.ts-sub{font-size:9px;color:#9C8565;font-weight:500;}
+
+/* ===== SECTIONS ===== */
+.section{padding:48px 20px;position:relative;}
+.section-paper{background:var(--paper);}
+.section-cream{background:var(--cream);}
+.section-cream-2{background:var(--cream-2);}
+.section-dark{background:var(--ink);color:var(--cream);}
+.section-forest{background:var(--forest-d);color:var(--cream);}
+
+.ornament{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;}
+.ornament-line{flex:1;max-width:48px;height:1px;background:var(--line);}
+.ornament-mark{font-family:var(--f-display);font-style:italic;color:var(--terracotta);font-size:18px;}
+
+.eyebrow{
+  font-family:var(--f-display);font-style:italic;font-weight:500;font-size:14px;
+  color:var(--terracotta);letter-spacing:3px;text-transform:uppercase;
+  text-align:center;margin-bottom:6px;
+}
+.section-title{
+  font-size:clamp(24px,7vw,34px);font-weight:900;color:var(--ink);
+  line-height:1.22;letter-spacing:-.5px;text-align:center;margin-bottom:14px;
+}
+.section-title .script{font-family:var(--f-display);font-style:italic;font-weight:500;color:var(--terracotta);font-size:1.2em;}
+.section-title em{font-style:normal;color:var(--terracotta);}
+.section-dark .section-title,.section-forest .section-title{color:var(--cream);}
+.section-dark .eyebrow,.section-forest .eyebrow{color:var(--gold-l);}
+.section-intro{font-size:15px;color:var(--text-mid);line-height:1.75;text-align:center;max-width:520px;margin:0 auto 28px;}
+.section-dark .section-intro,.section-forest .section-intro{color:#C9B89A;}
+
+/* ===== QUIZ BLOCK ===== */
+.quiz-block{
+  background:linear-gradient(135deg,var(--forest-d) 0%,var(--forest) 100%);
+  border-radius:20px;padding:26px 20px;color:var(--cream);
+  position:relative;overflow:hidden;
+  box-shadow:var(--shadow-lg);margin-top:8px;
+}
+.quiz-block::before{
+  content:'';position:absolute;top:-30px;left:-30px;width:140px;height:140px;
+  background:radial-gradient(circle,rgba(212,169,66,.25) 0%,transparent 70%);
+}
+.quiz-eyebrow{
+  font-family:var(--f-display);font-style:italic;color:var(--gold-l);
+  font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;position:relative;
+}
+.quiz-title{
+  font-size:20px;font-weight:900;line-height:1.3;margin-bottom:6px;position:relative;
+}
+.quiz-sub{font-size:13px;color:#C9B89A;margin-bottom:18px;position:relative;}
+.quiz-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;background:var(--gold);color:var(--ink);
+  font-weight:900;font-size:15px;padding:15px;border-radius:12px;
+  position:relative;transition:background .2s;
+}
+.quiz-btn:hover{background:var(--gold-l);}
+
+/* ===== PROBLEM SECTION ===== */
+.prob-hero-img{
+  border-radius:16px;overflow:hidden;margin-bottom:22px;
+  box-shadow:var(--shadow-md);position:relative;
+}
+.prob-hero-img::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 60%,rgba(28,20,16,.4) 100%);
+}
+.prob-grid{display:flex;flex-direction:column;gap:10px;}
+.prob-item{
+  display:flex;align-items:flex-start;gap:12px;
+  background:var(--terracotta-bg);
+  border-right:3px solid var(--terracotta);
+  border-radius:12px;padding:14px 16px;
+}
+.prob-icon{
+  width:32px;height:32px;border-radius:50%;
+  background:var(--terracotta);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:900;flex-shrink:0;
+}
+.prob-text{font-size:14px;font-weight:600;color:var(--espresso);line-height:1.55;padding-top:4px;}
+.prob-text b{color:var(--terracotta-d);font-weight:800;}
+
+.prob-cta-line{
+  margin-top:22px;padding:16px 18px;
+  background:var(--ink);border-radius:12px;
+  display:flex;align-items:center;gap:12px;
+  box-shadow:var(--shadow-md);
+}
+.prob-cta-icon{font-size:24px;flex-shrink:0;}
+.prob-cta-text{
+  font-size:13px;font-weight:700;color:var(--cream);line-height:1.5;
+}
+.prob-cta-text em{color:var(--gold-l);font-style:normal;}
+
+/* ===== SCIENCE SECTION ===== */
+.science-wrap{position:relative;}
+.science-img-feature{
+  border-radius:16px;overflow:hidden;
+  box-shadow:var(--shadow-lg);margin-bottom:20px;
+  border:3px solid var(--paper);
+}
+.science-callouts{display:flex;flex-direction:column;gap:12px;margin-bottom:20px;}
+.sci-call{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--paper);border:1px solid var(--line-soft);
+  border-radius:12px;padding:14px;box-shadow:var(--shadow-sm);
+}
+.sci-call-num{
+  width:38px;height:38px;border-radius:50%;
+  background:var(--forest);color:var(--gold-l);
+  font-family:var(--f-display);font-style:italic;font-weight:700;
+  font-size:18px;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;border:1px solid var(--gold);
+}
+.sci-call-title{font-size:14px;font-weight:800;color:var(--ink);margin-bottom:4px;}
+.sci-call-desc{font-size:13px;color:var(--text-mid);line-height:1.6;}
+
+/* ===== COUNTDOWN ===== */
+.countdown-box{
+  background:linear-gradient(135deg,var(--ink) 0%,var(--espresso) 100%);
+  border-radius:16px;padding:18px 16px;margin-bottom:20px;
+  border:1px solid var(--gold);text-align:center;
+  box-shadow:var(--shadow-md);position:relative;overflow:hidden;
+}
+.countdown-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.cd-label{
+  font-size:11px;font-weight:800;color:var(--gold-l);
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;
+}
+.cd-timer{display:flex;justify-content:center;gap:8px;}
+.cd-unit{
+  background:rgba(255,255,255,.05);border:1px solid rgba(184,134,11,.3);
+  border-radius:10px;padding:8px 4px;min-width:58px;
+}
+.cd-num{
+  font-family:var(--f-body);font-size:26px;font-weight:900;
+  color:var(--cream);display:block;line-height:1;letter-spacing:-.5px;
+}
+.cd-label-sm{
+  font-size:9px;color:#C9B89A;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;margin-top:4px;
+}
+.cd-divider{
+  font-size:22px;color:var(--gold-l);font-weight:900;
+  align-self:center;padding:0 2px;
+}
+
+/* ===== ORDER FORM ===== */
+.order-section{
+  background:
+    linear-gradient(180deg,var(--ink) 0%,var(--espresso) 100%);
+  padding:44px 18px;position:relative;overflow:hidden;
+}
+.order-section::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.order-section::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.order-headline{
+  text-align:center;font-size:clamp(22px,6vw,28px);font-weight:900;
+  color:var(--cream);margin-bottom:6px;line-height:1.25;
+}
+.order-headline .script{font-family:var(--f-display);font-style:italic;font-weight:500;color:var(--gold-l);font-size:1.15em;}
+.order-sub{text-align:center;font-size:13px;color:#C9B89A;margin-bottom:20px;}
+
+.form-card{
+  background:var(--paper);border-radius:20px;padding:22px 18px;
+  box-shadow:0 20px 60px rgba(0,0,0,.4);position:relative;
+}
+.form-card::before{
+  content:'';position:absolute;top:-1px;left:16px;right:16px;height:3px;
+  background:linear-gradient(90deg,var(--terracotta),var(--gold));border-radius:0 0 3px 3px;
+}
+
+.scarcity{
+  background:var(--terracotta-bg);border:1px solid var(--terracotta-l);
+  border-radius:12px;padding:12px 14px;margin-bottom:18px;
+}
+.scarcity-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.scarcity-text{font-size:12px;font-weight:800;color:var(--terracotta-d);display:flex;align-items:center;gap:5px;}
+.scarcity-text .dot-red{
+  width:7px;height:7px;border-radius:50%;background:var(--red-alert);
+  animation:blink-dot 1.2s infinite;
+}
+.scarcity-qty{font-size:11px;color:var(--terracotta-d);font-weight:700;}
+.scarcity-qty b{font-size:14px;font-weight:900;color:var(--terracotta-d);}
+.scarcity-bar{height:7px;background:#EED9CF;border-radius:100px;overflow:hidden;}
+.scarcity-fill{height:100%;width:23%;background:linear-gradient(90deg,var(--terracotta),var(--gold-l));border-radius:100px;}
+
+.bundle-label{
+  font-size:12px;font-weight:800;color:var(--text-mid);
+  margin-bottom:10px;text-align:center;letter-spacing:1.5px;
+}
+.bundles{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;}
+.bundle{
+  background:var(--paper);border:2px solid var(--line-soft);
+  border-radius:14px;padding:14px 14px;cursor:pointer;
+  transition:border-color .2s,background .2s,transform .1s;
+  position:relative;
+}
+.bundle:active{transform:scale(.99);}
+.bundle.selected{
+  border-color:var(--terracotta);
+  background:linear-gradient(135deg,var(--terracotta-bg) 0%,var(--paper) 100%);
+  box-shadow:0 4px 16px rgba(184,68,44,.15);
+}
+.bundle-top{display:flex;align-items:center;gap:12px;}
+.bundle-visual{
+  width:58px;height:58px;flex-shrink:0;
+  background:var(--cream);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  border:1px solid var(--line-soft);
+}
+.bundle-visual-bottle{
+  width:14px;height:30px;border-radius:3px 3px 2px 2px;
+  background:linear-gradient(180deg,#8B3A1C 0%,#5F2510 100%);
+  position:relative;
+}
+.bundle-visual-bottle::before{
+  content:'';position:absolute;top:-4px;left:2px;right:2px;height:4px;
+  background:#1A0A05;border-radius:2px 2px 0 0;
+}
+.bundle-visual-bottle::after{
+  content:'';position:absolute;top:6px;left:2px;right:2px;height:10px;
+  background:#C41E1E;border-radius:1px;
+}
+.bundle-visual-stack{
+  display:flex;gap:2px;align-items:flex-end;position:relative;
+}
+.bundle-free-tag{
+  position:absolute;top:-4px;right:-6px;
+  background:var(--green-go);color:var(--cream);
+  font-size:8px;font-weight:900;padding:2px 5px;border-radius:4px;
+  transform:rotate(10deg);
+  box-shadow:0 2px 4px rgba(47,122,63,.4);
+  letter-spacing:.5px;
+  animation:glow-free 2s infinite;
+}
+.bundle-info{flex:1;min-width:0;}
+.bundle-name{font-size:15px;font-weight:900;color:var(--ink);line-height:1.2;}
+.bundle-sub{font-size:11px;color:var(--text-soft);margin-top:2px;}
+.bundle-save{font-size:11px;font-weight:800;color:var(--green-go);margin-top:3px;}
+.bundle-pricing{text-align:left;flex-shrink:0;}
+.bundle-old{font-size:11px;color:var(--text-soft);text-decoration:line-through;line-height:1.2;}
+.bundle-price{font-size:19px;font-weight:900;color:var(--terracotta);line-height:1.1;}
+.bundle-price span{font-size:11px;font-weight:700;margin-right:2px;}
+.bundle-check{
+  width:22px;height:22px;border-radius:50%;
+  border:2px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;font-size:12px;transition:all .2s;
+}
+.bundle.selected .bundle-check{background:var(--terracotta);border-color:var(--terracotta);color:var(--cream);}
+.popular-badge{
+  position:absolute;top:-10px;right:16px;
+  background:var(--gold);color:var(--ink);
+  font-size:10px;font-weight:900;padding:3px 10px;border-radius:100px;
+  letter-spacing:.5px;box-shadow:0 2px 6px rgba(184,134,11,.35);
+}
+
+.order-summary{
+  background:var(--cream);border:1px solid var(--line-soft);
+  border-radius:12px;padding:14px;margin-bottom:18px;
+}
+.sum-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--text-mid);padding:4px 0;}
+.sum-row.total{font-size:16px;font-weight:900;color:var(--ink);border-top:1px solid var(--line-soft);margin-top:6px;padding-top:10px;}
+.sum-row.total .val{color:var(--terracotta);font-size:20px;letter-spacing:-.5px;}
+.sum-free{color:var(--green-go);font-weight:800;}
+
+.form-group{margin-bottom:14px;}
+.form-label{display:block;font-size:12px;font-weight:800;color:var(--text-mid);margin-bottom:6px;letter-spacing:.3px;}
+.form-label .req{color:var(--terracotta);}
+.form-input,.form-select{
+  width:100%;border:1.5px solid var(--line-soft);border-radius:10px;
+  padding:13px 14px;font-family:var(--f-body);font-size:15px;
+  color:var(--text);background:var(--paper);
+  transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;
+}
+.form-input:focus,.form-select:focus{
+  outline:none;border-color:var(--terracotta);
+  box-shadow:0 0 0 3px rgba(184,68,44,.12);
+}
+.form-input::placeholder{color:var(--text-soft);}
+
+.submit-btn{
+  width:100%;background:linear-gradient(180deg,var(--terracotta),var(--terracotta-d));
+  color:var(--cream);font-weight:900;font-size:18px;
+  padding:18px;border-radius:13px;margin-top:6px;
+  letter-spacing:.2px;
+  box-shadow:0 6px 20px rgba(184,68,44,.35),inset 0 1px 0 rgba(255,255,255,.2);
+  transition:transform .1s;position:relative;overflow:hidden;
+}
+.submit-btn::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);
+  transform:translateX(-100%);
+}
+.submit-btn:hover::after{animation:shine 1.3s;}
+.submit-btn:active{transform:scale(.98);}
+.lock-msg{
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  font-size:12px;color:var(--text-soft);margin-top:12px;font-weight:600;
+}
+
+.success-box{display:none;text-align:center;padding:10px 0;animation:float-up .5s ease;}
+.success-icon{
+  width:72px;height:72px;border-radius:50%;
+  background:var(--green-go);color:var(--cream);
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:34px;margin-bottom:14px;
+  box-shadow:0 8px 24px rgba(47,122,63,.3);
+}
+.success-title{font-size:22px;font-weight:900;color:var(--ink);margin-bottom:10px;}
+.success-urgent{
+  background:var(--terracotta-bg);border-right:3px solid var(--terracotta);
+  border-radius:10px;padding:14px;margin-bottom:14px;
+  font-size:14px;font-weight:700;color:var(--terracotta-d);line-height:1.6;text-align:right;
+}
+.success-body{font-size:14px;color:var(--text-mid);line-height:1.75;}
+
+/* ===== BEFORE/AFTER ===== */
+.ba-labels{display:flex;gap:10px;margin-bottom:14px;}
+.ba-label{
+  flex:1;text-align:center;padding:10px;border-radius:10px;
+  font-size:13px;font-weight:800;letter-spacing:.2px;
+}
+.ba-label.before{background:var(--terracotta-bg);color:var(--terracotta-d);}
+.ba-label.after{background:#D4EDD4;color:var(--green-go);}
+.ba-img{
+  border-radius:16px;overflow:hidden;margin-bottom:18px;
+  box-shadow:var(--shadow-lg);border:3px solid var(--paper);
+}
+.timeline-wrap{position:relative;margin-top:10px;}
+.timeline-line{
+  position:absolute;top:20px;bottom:20px;right:19px;width:2px;
+  background:linear-gradient(180deg,var(--terracotta),var(--gold));
+}
+.timeline{display:flex;flex-direction:column;gap:14px;position:relative;}
+.tl-item{
+  display:flex;align-items:flex-start;gap:14px;
+  padding-right:6px;
+}
+.tl-dot{
+  width:40px;height:40px;border-radius:50%;
+  background:var(--paper);border:3px solid var(--terracotta);
+  color:var(--terracotta);font-size:10px;font-weight:900;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;text-align:center;line-height:1.1;
+  position:relative;z-index:1;
+  box-shadow:var(--shadow-sm);
+}
+.tl-content{
+  flex:1;background:var(--paper);border:1px solid var(--line-soft);
+  border-radius:12px;padding:12px 14px;box-shadow:var(--shadow-sm);
+}
+.tl-title{font-size:14px;font-weight:800;color:var(--ink);margin-bottom:3px;}
+.tl-text{font-size:13px;color:var(--text-mid);line-height:1.6;}
+
+/* ===== INGREDIENTS ===== */
+.ing-grid{display:flex;flex-direction:column;gap:12px;margin-top:10px;}
+.ing-card{
+  display:flex;gap:14px;background:var(--paper);
+  border:1px solid var(--line-soft);border-radius:14px;padding:14px;
+  box-shadow:var(--shadow-sm);align-items:stretch;
+}
+.ing-img-wrap{
+  width:90px;flex-shrink:0;border-radius:10px;overflow:hidden;
+  position:relative;
+}
+.ing-img-wrap img{width:100%;height:100%;object-fit:cover;}
+.ing-body{flex:1;display:flex;flex-direction:column;justify-content:center;}
+.ing-name{
+  font-size:15px;font-weight:900;color:var(--ink);margin-bottom:4px;
+  display:flex;align-items:center;gap:6px;
+}
+.ing-name .latin{
+  font-family:var(--f-display);font-style:italic;font-weight:500;
+  font-size:13px;color:var(--text-soft);
+}
+.ing-desc{font-size:13px;color:var(--text-mid);line-height:1.55;}
+
+/* ===== SOCIAL PROOF / TIKTOK ===== */
+.sp-number{
+  font-family:var(--f-body);font-size:56px;font-weight:900;
+  color:var(--gold-l);text-align:center;margin-bottom:4px;
+  letter-spacing:-1px;
+  text-shadow:0 2px 20px rgba(184,134,11,.3);
+}
+.sp-sub{text-align:center;font-size:14px;color:#C9B89A;margin-bottom:24px;font-weight:600;}
+.sp-sub em{color:var(--gold-l);font-style:normal;font-weight:800;}
+.ugc-frame{
+  border-radius:16px;overflow:hidden;
+  box-shadow:0 8px 32px rgba(0,0,0,.4);
+  border:3px solid var(--espresso);
+}
+
+/* ===== REVIEWS ===== */
+.reviews-grid{display:flex;flex-direction:column;gap:14px;margin-top:10px;}
+.rev-card{
+  background:var(--paper);border:1px solid var(--line-soft);
+  border-radius:14px;padding:16px;box-shadow:var(--shadow-sm);
+  position:relative;overflow:hidden;
+}
+.rev-card::before{
+  content:'"';position:absolute;top:-10px;left:12px;
+  font-family:var(--f-display);font-size:70px;color:var(--terracotta);
+  opacity:.12;line-height:1;
+}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;position:relative;}
+.rev-avatar{
+  width:42px;height:42px;border-radius:50%;overflow:hidden;
+  border:2px solid var(--terracotta);background:var(--cream-2);flex-shrink:0;
+}
+.rev-avatar img{width:100%;height:100%;object-fit:cover;}
+.rev-meta{flex:1;min-width:0;}
+.rev-name{font-size:14px;font-weight:800;color:var(--ink);line-height:1.2;}
+.rev-city{font-size:11px;color:var(--text-soft);margin-top:1px;}
+.rev-verified{
+  font-size:10px;color:var(--green-go);font-weight:700;margin-top:2px;
+  display:flex;align-items:center;gap:3px;
+}
+.rev-stars{color:var(--gold);font-size:14px;letter-spacing:2px;flex-shrink:0;}
+.rev-text{
+  font-size:14px;color:var(--text-mid);line-height:1.7;
+  font-weight:500;position:relative;
+}
+.rev-text b{color:var(--ink);font-weight:700;}
+.rev-photo{
+  margin-top:10px;border-radius:8px;overflow:hidden;
+  border:1px solid var(--line-soft);max-width:120px;
+}
+.rev-photo img{width:100%;display:block;}
+
+/* ===== COMPARISON (REAL) ===== */
+.comp-wrap{margin-top:10px;}
+.comp-header{
+  display:grid;grid-template-columns:1.2fr 1fr 1fr;
+  background:var(--ink);border-radius:12px 12px 0 0;
+  overflow:hidden;
+}
+.comp-h{
+  padding:14px 10px;text-align:center;
+  font-size:12px;font-weight:800;
+}
+.comp-h.feat{background:var(--espresso);color:var(--gold-l);text-align:right;padding-right:16px;}
+.comp-h.us{background:var(--terracotta);color:var(--cream);position:relative;}
+.comp-h.us::after{
+  content:'';position:absolute;bottom:-1px;left:0;right:0;height:3px;
+  background:var(--gold);
+}
+.comp-h.them{background:#3A3A3A;color:#999;}
+.comp-logo{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--cream);color:var(--terracotta);
+  font-family:var(--f-display);font-style:italic;font-weight:700;font-size:15px;
+  display:inline-flex;align-items:center;justify-content:center;margin:0 auto 4px;
+}
+.comp-them-logo{
+  width:28px;height:28px;margin:0 auto 4px;
+  background:var(--paper);border-radius:6px;
+  display:inline-flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.comp-them-logo img{width:100%;height:100%;object-fit:contain;padding:2px;}
+.comp-body{background:var(--paper);border:1px solid var(--line-soft);border-top:none;border-radius:0 0 12px 12px;overflow:hidden;}
+.comp-row{
+  display:grid;grid-template-columns:1.2fr 1fr 1fr;
+  border-top:1px solid var(--line-soft);
+}
+.comp-row:first-child{border-top:none;}
+.comp-cell{
+  padding:13px 10px;font-size:13px;font-weight:700;text-align:center;
+  display:flex;align-items:center;justify-content:center;
+}
+.comp-cell.feat{text-align:right;justify-content:flex-end;color:var(--text-mid);padding-right:16px;font-weight:600;}
+.comp-cell.us{color:var(--green-go);font-weight:800;background:rgba(47,122,63,.05);}
+.comp-cell.them{color:#B8A896;}
+.comp-cell.us .mark{font-size:18px;color:var(--green-go);font-weight:900;}
+.comp-cell.them .mark{font-size:18px;color:#C8A896;font-weight:900;}
+
+/* ===== FAQ ===== */
+.faq-list{display:flex;flex-direction:column;gap:8px;margin-top:10px;}
+.faq-item{
+  background:var(--paper);border:1px solid var(--line-soft);
+  border-radius:12px;overflow:hidden;transition:border-color .2s;
+}
+.faq-item.open{border-color:var(--terracotta);}
+.faq-q{
+  padding:15px 16px;font-size:14px;font-weight:800;color:var(--ink);
+  display:flex;justify-content:space-between;align-items:center;
+  user-select:none;gap:10px;
+}
+.faq-q::after{
+  content:'';width:16px;height:16px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23B8442C'%3E%3Cpath d='M8 2v12M2 8h12' stroke='%23B8442C' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;
+  flex-shrink:0;transition:transform .3s;
+}
+.faq-item.open .faq-q::after{transform:rotate(45deg);}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;
+  font-size:13.5px;color:var(--text-mid);line-height:1.7;padding:0 16px;
+}
+.faq-item.open .faq-a{max-height:320px;padding:0 16px 14px;}
+
+/* ===== GUARANTEE ===== */
+.guarantee-inner{
+  background:linear-gradient(135deg,rgba(212,169,66,.08) 0%,rgba(184,68,44,.08) 100%);
+  border:1px solid rgba(212,169,66,.25);
+  border-radius:18px;padding:28px 20px;text-align:center;
+}
+.guarantee-shield{
+  width:68px;height:68px;margin:0 auto 14px;
+  background:var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:32px;
+  box-shadow:0 8px 24px rgba(184,134,11,.35);
+}
+.guarantee-title{font-size:22px;font-weight:900;color:var(--cream);margin-bottom:10px;font-family:var(--f-body);}
+.guarantee-title .script{font-family:var(--f-display);font-style:italic;color:var(--gold-l);}
+.guarantee-text{font-size:14px;color:#C9B89A;line-height:1.8;}
+.guarantee-text b{color:var(--gold-l);font-weight:700;}
+
+/* ===== URGENCY BAR ===== */
+.urgency-wrap{padding:0 20px 24px;}
+.urgency-bar{
+  background:var(--paper);border:2px solid var(--terracotta);
+  border-radius:14px;padding:16px;display:flex;align-items:center;gap:12px;
+  box-shadow:var(--shadow-sm);
+}
+.urgency-icon{
+  width:38px;height:38px;border-radius:50%;
+  background:var(--terracotta);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;
+}
+.urgency-text{font-size:13px;font-weight:700;color:var(--terracotta-d);line-height:1.55;}
+.urgency-text b{font-weight:900;}
+
+/* ===== FOOTER ===== */
+.footer{
+  background:var(--ink);padding:32px 20px 20px;text-align:center;
+  border-top:1px solid var(--gold);
+}
+.footer-logo{
+  font-family:var(--f-display);font-style:italic;font-weight:600;
+  font-size:28px;color:var(--gold-l);margin-bottom:8px;
+}
+.footer-tagline{
+  font-family:var(--f-display);font-style:italic;
+  font-size:13px;color:#9C8565;margin-bottom:16px;
+}
+.footer-badges{
+  display:flex;justify-content:center;gap:14px;margin-bottom:18px;flex-wrap:wrap;
+}
+.footer-badge{
+  font-size:10px;color:#9C8565;font-weight:700;letter-spacing:.5px;
+}
+.footer-text{font-size:11px;color:#6E5A45;line-height:1.7;}
+
+/* ===== STICKY CTA ===== */
+.sticky-cta{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;
+  background:linear-gradient(180deg,rgba(253,251,247,.4) 0%,rgba(253,251,247,.96) 30%,var(--paper) 100%);
+  padding:14px 14px 16px;backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+.sticky-cta-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  background:linear-gradient(180deg,var(--terracotta),var(--terracotta-d));
+  color:var(--cream);font-weight:900;font-size:16px;
+  padding:15px;border-radius:12px;letter-spacing:.2px;
+  box-shadow:0 6px 20px rgba(184,68,44,.35);
+}
+.sticky-cta-btn em{
+  color:var(--gold-l);font-style:normal;font-weight:900;
+  background:rgba(0,0,0,.25);padding:2px 8px;border-radius:100px;font-size:12px;
+}
+@media(max-width:640px){.sticky-cta{display:block;}}
+
+/* ===== EXIT INTENT MODAL ===== */
+.exit-modal{
+  position:fixed;inset:0;z-index:2000;
+  background:rgba(28,20,16,.85);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;animation:float-up .3s ease;
+}
+.exit-modal.show{display:flex;}
+.exit-card{
+  background:var(--paper);border-radius:20px;padding:28px 22px 20px;
+  max-width:380px;width:100%;text-align:center;position:relative;
+  box-shadow:0 30px 80px rgba(0,0,0,.5);
+  border:2px solid var(--gold);
+}
+.exit-close{
+  position:absolute;top:10px;left:10px;
+  width:32px;height:32px;border-radius:50%;
+  background:var(--cream-2);color:var(--text-mid);
+  font-size:16px;font-weight:900;display:flex;align-items:center;justify-content:center;
+}
+.exit-eyebrow{
+  font-family:var(--f-display);font-style:italic;color:var(--terracotta);
+  font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;
+}
+.exit-title{font-size:23px;font-weight:900;color:var(--ink);line-height:1.25;margin-bottom:10px;}
+.exit-title em{color:var(--terracotta);font-style:normal;}
+.exit-sub{font-size:14px;color:var(--text-mid);line-height:1.6;margin-bottom:14px;}
+.exit-perks{
+  display:flex;flex-direction:column;gap:10px;
+  margin-bottom:14px;text-align:right;
+}
+.exit-perk{
+  display:flex;align-items:center;gap:12px;
+  background:var(--gold-bg);border:1px solid rgba(212,169,66,.3);
+  border-radius:12px;padding:12px 14px;
+}
+.exit-perk-icon{
+  font-size:24px;width:40px;height:40px;flex-shrink:0;
+  background:var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 3px 10px rgba(184,134,11,.3);
+}
+.exit-perk-text{font-size:13px;color:var(--ink);font-weight:600;line-height:1.4;flex:1;}
+.exit-perk-text b{font-weight:900;font-size:14px;display:block;margin-bottom:2px;color:var(--ink);}
+.exit-perk-text small{font-size:11px;color:var(--text-soft);font-weight:500;}
+.exit-sub-2{font-size:12px;color:var(--terracotta);font-weight:700;margin-bottom:12px;font-style:italic;}
+.exit-btn{
+  display:block;width:100%;
+  background:linear-gradient(180deg,var(--terracotta),var(--terracotta-d));
+  color:var(--cream);font-weight:900;font-size:15px;
+  padding:15px;border-radius:12px;margin-bottom:8px;
+  box-shadow:0 6px 16px rgba(184,68,44,.3);
+}
+.exit-no{
+  display:block;width:100%;
+  background:none;color:var(--text-soft);
+  font-size:12px;font-weight:600;padding:8px;
+  text-decoration:underline;
+}
+</style>
+
+<!-- ============================================
+     META PIXEL
+     ============================================ -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','858386665809065');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=858386665809065&ev=PageView&noscript=1"/></noscript>
+
+<!-- ============================================
+     TIKTOK PIXEL
+     ============================================ -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+  ttq.load('D2KM92JC77U9PLHEPTMG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+
+<!-- ============================================
+     SNAPCHAT PIXEL
+     ============================================ -->
+<script>
+(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function(){a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};a.queue=[];var s='script';r=t.createElement(s);r.async=!0;r.src=n;var u=t.getElementsByTagName(s)[0];u.parentNode.insertBefore(r,u);})(window,document,'https://sc-static.net/scevent.min.js');
+snaptr('init', 'a723e11c-e6eb-4038-8633-be2477ebb6ee');
+snaptr('track', 'PAGE_VIEW');
+</script>
+
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar">
+  <div class="ann-inner">
+    <span>🇧🇷 <em>السر البرازيلي</em> وصل أخيراً</span>
+    <span>🚚 <em>شحن مجاني</em> داخل ليبيا</span>
+    <span>💵 الدفع <em>عند الاستلام فقط</em></span>
+    <span>🛡️ ضمان <em>7 أيام</em> لاسترداد المبلغ كاملاً</span>
+    <span>⚡ الكمية محدودة — <em>اطلبي الآن</em></span>
+    <span>🇧🇷 <em>السر البرازيلي</em> وصل أخيراً</span>
+    <span>🚚 <em>شحن مجاني</em> داخل ليبيا</span>
+    <span>💵 الدفع <em>عند الاستلام فقط</em></span>
+    <span>🛡️ ضمان <em>7 أيام</em> لاسترداد المبلغ كاملاً</span>
+    <span>⚡ الكمية محدودة — <em>اطلبي الآن</em></span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo-wrap">
+    <div class="logo-mark">R</div>
+    <div class="logo-text">Rapunzel</div>
+  </div>
+  <button class="h-btn pulse" onclick="scrollToOrder()">اطلبي الآن ↓</button>
+</header>
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero">
+  <div class="hero-live reveal">
+    <span class="dot"></span>
+    <b>+2,847</b>&nbsp;عميلة وثقت بنا هذا الشهر
+  </div>
+  <p class="hero-eyebrow reveal">Rapunzel · رابونزيل</p>
+  <h1 class="reveal">
+    شعر <span class="script">رابونزيل</span><br>
+    <em>ليس أسطورة</em> — بل تركيبة برازيلية
+  </h1>
+  <p class="hero-sub reveal">
+    <b>أوقفي التساقط في أسبوعين.</b> احصلي على كثافة حقيقية في 8 أسابيع. التونك البرازيلي الأول من Lola Cosmetics — جينكو بيلوبا + كافيين نشط + مستخلصات نباتية مركّزة. مختبر دِرمِيّاً. ما فيه منتج مثله في ليبيا.
+  </p>
+
+  <div class="hero-img-frame reveal">
+    <img src="images/IMAGE_3-optimized.webp" alt="Rapunzel — نتائج حقيقية" loading="eager" fetchpriority="high">
+    <div class="hero-img-stamp">BRAZIL · EST. 2008</div>
+    <div class="hero-img-caption">
+      <div class="hero-img-caption-name">— سارة، طرابلس</div>
+      <div class="hero-img-caption-text">"بعد شهرين من الاستخدام — <em>الفرق واضح جداً</em>"</div>
+    </div>
+  </div>
+
+  <div class="stats-row reveal-stagger">
+    <div class="stat"><span class="stat-n">+2,847</span><span class="stat-l">عميلة في ليبيا</span></div>
+    <div class="stat"><span class="stat-n">94%</span><span class="stat-l">لاحظن الفرق</span></div>
+    <div class="stat"><span class="stat-n">4.8★</span><span class="stat-l">تقييم حقيقي</span></div>
+  </div>
+
+  <button class="btn-primary pulse reveal" onclick="scrollToOrder()">
+    🌿 اطلبي Rapunzel الآن
+  </button>
+  <div class="hero-trust-row reveal">
+    <span>🚚 <b>شحن مجاني</b></span>
+    <span>💵 دفع عند الاستلام</span>
+    <span>🛡️ ضمان 7 أيام</span>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="ts-item">
+      <span class="ts-icon">🌿</span>
+      <span class="ts-label">100% طبيعي</span>
+      <span class="ts-sub">معتمد عضوياً</span>
+    </div>
+    <div class="ts-item">
+      <span class="ts-icon">🔬</span>
+      <span class="ts-label">مختبر دِرمِيّاً</span>
+      <span class="ts-sub">آمن للاستخدام اليومي</span>
+    </div>
+    <div class="ts-item">
+      <span class="ts-icon">🇧🇷</span>
+      <span class="ts-label">من البرازيل</span>
+      <span class="ts-sub">Lola Cosmetics</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     PROBLEM SECTION
+     ============================================ -->
+<section class="section section-paper">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-mark">✦</div><div class="ornament-line"></div></div>
+    <p class="eyebrow">المشكلة</p>
+    <h2 class="section-title">تساقط الشعر ما هو <span class="script">عادي</span></h2>
+    <p class="section-intro">
+      كل يوم تقنعين نفسك إن الوضع سيتحسن. لكن الحقيقة — <b>كل أسبوع يمر، الفراغات تزيد، والكثافة تقل.</b>
+    </p>
+  </div>
+
+  <div class="prob-hero-img reveal">
+    <img src="images/IMAGE_5-optimized.webp" alt="تساقط الشعر" loading="lazy">
+  </div>
+
+  <div class="prob-grid reveal-stagger">
+    <div class="prob-item">
+      <div class="prob-icon">١</div>
+      <p class="prob-text">كل صباح <b>شعر على الوسادة</b>، وأثر واضح في الفرشاة — والكمية تزيد كل يوم</p>
+    </div>
+    <div class="prob-item">
+      <div class="prob-icon">٢</div>
+      <p class="prob-text">بدأت تتجنّبين ربط شعرك، لأن <b>الفراغات في المقدمة والفرق الوسطي</b> أصبحت واضحة</p>
+    </div>
+    <div class="prob-item">
+      <div class="prob-icon">٣</div>
+      <p class="prob-text">جربتِ زيوت وشامبوهات <b>صرفتِ عليها مئات الدينارات</b> — وما جابت أي نتيجة حقيقية</p>
+    </div>
+    <div class="prob-item">
+      <div class="prob-icon">٤</div>
+      <p class="prob-text"><b>ثقتك بنفسك تراجعت</b> — في المناسبات، أمام المرآة، حتى في الصور مع عائلتك</p>
+    </div>
+  </div>
+
+  <div class="prob-cta-line reveal">
+    <span class="prob-cta-icon">⏳</span>
+    <p class="prob-cta-text">كل يوم يمر بدون حل <em>= بصيلة تموت للأبد.</em> الوقت عدوك الأول الآن.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     SCIENCE SECTION
+     ============================================ -->
+<section class="section section-cream-2">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-mark">✦</div><div class="ornament-line"></div></div>
+    <p class="eyebrow">العلم</p>
+    <h2 class="section-title">المشكلة ليست في شعرِك —<br><em>المشكلة في البصيلات</em></h2>
+    <p class="section-intro">
+      95% من منتجات الشعر تعمل على الجذع الخارجي. Rapunzel يصل إلى الجذر — حرفياً.
+    </p>
+  </div>
+
+  <div class="science-img-feature reveal">
+    <img src="images/IMAGE_4-optimized.webp" alt="البصيلات" loading="lazy">
+  </div>
+
+  <div class="science-callouts reveal-stagger">
+    <div class="sci-call">
+      <div class="sci-call-num">I</div>
+      <div>
+        <p class="sci-call-title">ينشّط الدورة الدموية في فروة الرأس</p>
+        <p class="sci-call-desc">الجينكو بيلوبا البرازيلي يفتح الأوعية الدقيقة ويوصل الأكسجين إلى بصيلاتك الخاملة</p>
+      </div>
+    </div>
+    <div class="sci-call">
+      <div class="sci-call-num">II</div>
+      <div>
+        <p class="sci-call-title">يوقف هرمون التساقط (DHT)</p>
+        <p class="sci-call-desc">مستخلصات نباتية مركّزة تعيد توازن فروة الرأس وتمنع تقلّص البصيلات</p>
+      </div>
+    </div>
+    <div class="sci-call">
+      <div class="sci-call-num">III</div>
+      <div>
+        <p class="sci-call-title">يُطيل دورة حياة البصيلة</p>
+        <p class="sci-call-desc">الكافيين النشط يحفّز البصيلات لإنتاج شعر أطول، أكثف، وأقوى من الأساس</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="science-img-feature reveal">
+    <img src="images/IMAGE_6-optimized.webp" alt="مكونات Rapunzel" loading="lazy">
+  </div>
+</section>
+
+<!-- ============================================
+     ORDER FORM SECTION
+     ============================================ -->
+<section class="order-section" id="order-form">
+  <p class="eyebrow reveal">اطلبي الآن</p>
+  <h2 class="order-headline reveal">
+    احصلي على <span class="script">Rapunzel</span><br>
+    واستلميه على بابك
+  </h2>
+  <p class="order-sub reveal">دفع عند الاستلام · شحن مجاني · ضمان 7 أيام</p>
+
+  <div class="form-card reveal">
+    <div id="form-content">
+
+      <!-- COUNTDOWN -->
+      <div class="countdown-box">
+        <p class="cd-label">⚡ ينتهي العرض خلال</p>
+        <div class="cd-timer">
+          <div class="cd-unit"><span class="cd-num" id="cd-h">23</span><span class="cd-label-sm">ساعة</span></div>
+          <div class="cd-divider">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-m">59</span><span class="cd-label-sm">دقيقة</span></div>
+          <div class="cd-divider">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-s">59</span><span class="cd-label-sm">ثانية</span></div>
+        </div>
+      </div>
+
+      <!-- SCARCITY -->
+      <div class="scarcity">
+        <div class="scarcity-top">
+          <span class="scarcity-text"><span class="dot-red"></span>الكمية تنفد بسرعة</span>
+          <span class="scarcity-qty">متبقي <b id="stock-n">23</b> قطعة</span>
+        </div>
+        <div class="scarcity-bar"><div class="scarcity-fill" id="stock-fill"></div></div>
+      </div>
+
+      <p class="bundle-label">— اختاري عرضكِ —</p>
+
+      <div class="bundles">
+
+        <!-- 1x -->
+        <div class="bundle" id="b1" onclick="selectBundle(1)">
+          <div class="bundle-top">
+            <div class="bundle-visual">
+              <div class="bundle-visual-bottle"></div>
+            </div>
+            <div class="bundle-info">
+              <div class="bundle-name">١ قطعة</div>
+              <div class="bundle-sub">للتجربة · 30 يوم استخدام</div>
+            </div>
+            <div class="bundle-pricing">
+              <div class="bundle-old">280 د.ل</div>
+              <div class="bundle-price">189<span> د.ل</span></div>
+            </div>
+            <div class="bundle-check" id="c1"></div>
+          </div>
+        </div>
+
+        <!-- 2+1 FREE -->
+        <div class="bundle selected" id="b2" onclick="selectBundle(2)">
+          <div class="popular-badge">⭐ الأكثر طلباً</div>
+          <div class="bundle-top">
+            <div class="bundle-visual">
+              <div class="bundle-visual-stack">
+                <div class="bundle-visual-bottle" style="height:26px;"></div>
+                <div class="bundle-visual-bottle" style="height:30px;"></div>
+                <div class="bundle-visual-bottle" style="height:26px;"></div>
+              </div>
+              <div class="bundle-free-tag">مجاناً</div>
+            </div>
+            <div class="bundle-info">
+              <div class="bundle-name">٢ + <span style="color:var(--green-go);">١ هدية</span></div>
+              <div class="bundle-sub">3 زجاجات · 90 يوم</div>
+              <div class="bundle-save">🎉 وفّري 278 د.ل</div>
+            </div>
+            <div class="bundle-pricing">
+              <div class="bundle-old">567 د.ل</div>
+              <div class="bundle-price">289<span> د.ل</span></div>
+            </div>
+            <div class="bundle-check" id="c2">✓</div>
+          </div>
+        </div>
+
+        <!-- 3+2 FREE -->
+        <div class="bundle" id="b3" onclick="selectBundle(3)">
+          <div class="bundle-top">
+            <div class="bundle-visual">
+              <div class="bundle-visual-stack">
+                <div class="bundle-visual-bottle" style="height:22px;"></div>
+                <div class="bundle-visual-bottle" style="height:26px;"></div>
+                <div class="bundle-visual-bottle" style="height:30px;"></div>
+                <div class="bundle-visual-bottle" style="height:26px;"></div>
+                <div class="bundle-visual-bottle" style="height:22px;"></div>
+              </div>
+              <div class="bundle-free-tag">مجاناً</div>
+            </div>
+            <div class="bundle-info">
+              <div class="bundle-name">٣ + <span style="color:var(--green-go);">٢ هدية</span></div>
+              <div class="bundle-sub">5 زجاجات · 5 أشهر كاملة</div>
+              <div class="bundle-save">🔥 وفّري 556 د.ل</div>
+            </div>
+            <div class="bundle-pricing">
+              <div class="bundle-old">945 د.ل</div>
+              <div class="bundle-price">389<span> د.ل</span></div>
+            </div>
+            <div class="bundle-check" id="c3"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="order-summary">
+        <div class="sum-row"><span>المنتج</span><span id="s-product">Rapunzel × 2 + 1 مجاناً</span></div>
+        <div class="sum-row"><span>الشحن</span><span class="sum-free">مجاناً 🎁</span></div>
+        <div class="sum-row"><span>الدفع</span><span>عند الاستلام</span></div>
+        <div class="sum-row total"><span>الإجمالي</span><span class="val" id="s-total">289 د.ل</span></div>
+      </div>
+
+      <!-- FORM -->
+      <div class="form-group">
+        <label class="form-label">الاسم الكامل <span class="req">*</span></label>
+        <input class="form-input" id="f-name" type="text" placeholder="اسمكِ الكامل" onfocus="firePixel('ViewContent')">
+      </div>
+      <div class="form-group">
+        <label class="form-label">رقم الجوال <span class="req">*</span></label>
+        <input class="form-input" id="f-phone" type="tel" placeholder="09XXXXXXXX" onfocus="firePixel('AddToCart')">
+      </div>
+      <div class="form-group">
+        <label class="form-label">المدينة <span class="req">*</span></label>
+        <select class="form-select" id="f-city">
+          <option value="">اختاري مدينتكِ</option>
+          <option>طرابلس</option><option>بنغازي</option><option>مصراتة</option>
+          <option>الزاوية</option><option>زليتن</option><option>صبراتة</option>
+          <option>الخمس</option><option>سرت</option><option>طبرق</option>
+          <option>درنة</option><option>البيضاء</option><option>المرج</option>
+          <option>سبها</option><option>غريان</option><option>اجدابيا</option>
+          <option>مدينة أخرى</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">العنوان التفصيلي <span class="req">*</span></label>
+        <input class="form-input" id="f-address" type="text" placeholder="الحي، الشارع، رقم المبنى">
+      </div>
+
+      <button class="submit-btn" onclick="submitOrder()">
+        ✓ أكّدي طلبكِ — دفع عند الاستلام
+      </button>
+      <p class="lock-msg">🔒 بياناتكِ آمنة · لا نشارك معلوماتكِ مع أي طرف</p>
+
+    </div>
+
+    <!-- SUCCESS -->
+    <div class="success-box" id="success-box">
+      <div class="success-icon">✓</div>
+      <h3 class="success-title">تم استلام طلبكِ بنجاح!</h3>
+      <div class="success-urgent">
+        📞 سيتصل بكِ فريقنا خلال أقل من ساعة لتأكيد الطلب — تأكدي أن جوالكِ شغّال وقريب منكِ!
+      </div>
+      <p class="success-body">
+        بعد التأكيد الهاتفي، سنجهّز شحنتكِ ونوصلها لباب بيتكِ خلال 2–5 أيام عمل. الدفع عند الاستلام فقط — <b>ما في أي مخاطرة.</b> 🛡️
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     BEFORE / AFTER
+     ============================================ -->
+<section class="section section-cream">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-mark">✦</div><div class="ornament-line"></div></div>
+    <p class="eyebrow">النتائج</p>
+    <h2 class="section-title">8 أسابيع.<br><em>فرق لا يمكن إنكاره.</em></h2>
+  </div>
+  <div class="ba-labels reveal">
+    <div class="ba-label before">❌ قبل — تساقط وخفّة</div>
+    <div class="ba-label after">✅ بعد — كثافة ملحوظة</div>
+  </div>
+  <div class="ba-img reveal">
+    <img src="images/IMAGE_1-optimized.webp" alt="قبل وبعد Rapunzel" loading="lazy">
+  </div>
+
+  <div class="timeline-wrap reveal-stagger">
+    <div class="timeline-line"></div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">أسبوع<br>١</div>
+        <div class="tl-content">
+          <p class="tl-title">التساقط يقلّ بشكل ملحوظ</p>
+          <p class="tl-text">الفرشاة تصبح أنظف، الوسادة لم تعد مليئة بالشعر كل صباح 😮</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">شهر<br>١</div>
+        <div class="tl-content">
+          <p class="tl-title">بصيلات جديدة تبدأ بالنمو</p>
+          <p class="tl-text">فروة رأسكِ تشعر بالانتعاش وتبدئين برؤية شعيرات صغيرة جديدة تظهر</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">شهر<br>٢</div>
+        <div class="tl-content">
+          <p class="tl-title">كثافة واضحة — الفراغات تختفي</p>
+          <p class="tl-text">صديقاتكِ يلاحظن الفرق قبلكِ. تبدئين بالتقاط الصور بثقة 📸</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">شهر<br>٣</div>
+        <div class="tl-content">
+          <p class="tl-title">شعر Rapunzel الحقيقي</p>
+          <p class="tl-text">كثيف، قوي، لامع، ويلفت الأنظار في كل مكان ✨</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ba-img reveal" style="margin-top:22px;">
+    <img src="images/IMAGE_8-optimized.webp" alt="مراحل النمو" loading="lazy">
+  </div>
+</section>
+
+<!-- ============================================
+     INGREDIENTS
+     ============================================ -->
+<section class="section section-paper">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-mark">✦</div><div class="ornament-line"></div></div>
+    <p class="eyebrow">التركيبة</p>
+    <h2 class="section-title">من أعماق <span class="script">الأمازون</span><br>إلى شعرِكِ</h2>
+    <p class="section-intro">أربعة مكونات فقط. لكن كل واحد منها يغيّر القواعد.</p>
+  </div>
+
+  <div class="ing-grid reveal-stagger">
+    <div class="ing-card">
+      <div class="ing-img-wrap"><img src="images/_Ginkgo_Biloba.webp" alt="جينكو بيلوبا" loading="lazy"></div>
+      <div class="ing-body">
+        <p class="ing-name">جينكو بيلوبا <span class="latin">Ginkgo Biloba</span></p>
+        <p class="ing-desc">عشبة قديمة نادرة — تنشّط الدورة الدموية في فروة الرأس وتوقظ البصيلات الخاملة</p>
+      </div>
+    </div>
+    <div class="ing-card">
+      <div class="ing-img-wrap"><img src="images/Caffeine.webp" alt="الكافيين" loading="lazy"></div>
+      <div class="ing-body">
+        <p class="ing-name">الكافيين النشط <span class="latin">Caffeine</span></p>
+        <p class="ing-desc">يحفّز البصيلة مباشرة ويُطيل دورة النمو — أثبت فاعليته في 7 دراسات طبية</p>
+      </div>
+    </div>
+    <div class="ing-card">
+      <div class="ing-img-wrap"><img src="images/_Natural_Extracts.webp" alt="مستخلصات طبيعية" loading="lazy"></div>
+      <div class="ing-body">
+        <p class="ing-name">المستخلصات النباتية <span class="latin">Botanical Blend</span></p>
+        <p class="ing-desc">مزيج برازيلي فريد من الأعشاب — يعيد توازن فروة الرأس ويحميها من الجفاف</p>
+      </div>
+    </div>
+    <div class="ing-card">
+      <div class="ing-img-wrap"><img src="images/Sodium_PCA.webp" alt="صوديوم PCA" loading="lazy"></div>
+      <div class="ing-body">
+        <p class="ing-name">صوديوم PCA <span class="latin">Sodium PCA</span></p>
+        <p class="ing-desc">مُرطّب طبيعي يحفظ مرونة الشعر ويمنع التكسّر من الأعماق</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TIKTOK SOCIAL PROOF
+     ============================================ -->
+<section class="section section-dark">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line" style="background:var(--gold);"></div><div class="ornament-mark" style="color:var(--gold-l);">♡</div><div class="ornament-line" style="background:var(--gold);"></div></div>
+    <p class="sp-number">+2.4M</p>
+    <p class="sp-sub">مشاهدة على <em>TikTok</em> — الناس لا تتوقف عن الحديث عن Rapunzel</p>
+  </div>
+  <div class="ugc-frame reveal">
+    <img src="images/6.webp" alt="TikTok UGC" loading="lazy">
+  </div>
+</section>
+
+<!-- ============================================
+     REVIEWS
+     ============================================ -->
+<section class="section section-cream">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-mark">✦</div><div class="ornament-line"></div></div>
+    <p class="eyebrow">التقييمات</p>
+    <h2 class="section-title">ماذا قالت <span class="script">عميلاتنا؟</span></h2>
+    <p class="section-intro">+2,847 تقييم حقيقي · متوسط 4.8 نجوم · من نساء حقيقيات في ليبيا</p>
+  </div>
+
+  <div class="reviews-grid reveal-stagger">
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-avatar"><img src="images/rev1.webp" alt=""></div>
+        <div class="rev-meta">
+          <div class="rev-name">نورة ك.</div>
+          <div class="rev-city">طرابلس · 32 سنة</div>
+          <div class="rev-verified">✓ طلب موثّق</div>
+        </div>
+        <div class="rev-stars">★★★★★</div>
+      </div>
+      <p class="rev-text">"بعد الولادة شعري تأثر بشكل رهيب — كنت أبكي كل صباح من الكمية اللي تطيح. <b>Rapunzel كان الحل الوحيد.</b> بعد شهر ونصف، صديقاتي كلهم يسألونني شو سرّك."</p>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-avatar"><img src="images/rev2.webp" alt=""></div>
+        <div class="rev-meta">
+          <div class="rev-name">لمى م.</div>
+          <div class="rev-city">بنغازي · 44 سنة</div>
+          <div class="rev-verified">✓ طلب موثّق</div>
+        </div>
+        <div class="rev-stars">★★★★★</div>
+      </div>
+      <p class="rev-text">"عمري 44 سنة وكنت فقدت الأمل. جربت كل شي — زيوت، فيتامينات، حتى علاج ليزر في عيادة. <b>شهرين من Rapunzel فقط</b> أعطوني نتيجة ما حصّلتها في سنين."</p>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-avatar"><img src="images/rev3.webp" alt=""></div>
+        <div class="rev-meta">
+          <div class="rev-name">سارة م.</div>
+          <div class="rev-city">مصراتة · 28 سنة</div>
+          <div class="rev-verified">✓ طلب موثّق</div>
+        </div>
+        <div class="rev-stars">★★★★★</div>
+      </div>
+      <p class="rev-text">"خفيف جداً ما يثقّل الشعر، ريحته جميلة، وبالفعل لاحظت <b>نمو شعر جديد في الجوانب</b> اللي كانت تعبني من زمان. قلب زوجي طلب لأمه منه."</p>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-avatar"><img src="images/rev4.webp" alt=""></div>
+        <div class="rev-meta">
+          <div class="rev-name">هند ع.</div>
+          <div class="rev-city">طرابلس · 36 سنة</div>
+          <div class="rev-verified">✓ طلب موثّق</div>
+        </div>
+        <div class="rev-stars">★★★★★</div>
+      </div>
+      <p class="rev-text">"طلبت عرض 3+2 لأني شفت التقييمات وقلت لازم أشتري كمية — <b>والله كان أفضل قرار</b>. المنتج رائع والتوصيل سريع والدفع عند الباب مريح."</p>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-avatar"><img src="images/rev5.webp" alt=""></div>
+        <div class="rev-meta">
+          <div class="rev-name">ريم ا.</div>
+          <div class="rev-city">بنغازي · 31 سنة</div>
+          <div class="rev-verified">✓ طلب موثّق</div>
+        </div>
+        <div class="rev-stars">★★★★★</div>
+      </div>
+      <p class="rev-text">"زوجي لاحظ الفرق قبل ما ألاحظه أنا! قال لي <b>'شعرك صاير أكثف'</b> وأنا وقتها كنت مستخدمته 6 أسابيع بس. الحين أنصح كل صديقاتي فيه."</p>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-avatar"><img src="images/rev7.webp" alt=""></div>
+        <div class="rev-meta">
+          <div class="rev-name">منى س.</div>
+          <div class="rev-city">الزاوية · 39 سنة</div>
+          <div class="rev-verified">✓ طلب موثّق</div>
+        </div>
+        <div class="rev-stars">★★★★★</div>
+      </div>
+      <p class="rev-text">"من أول استخدام حسّيت فروة رأسي منتعشة، وبعد 3 أسابيع <b>التساقط اختفى تقريباً</b>. لو بس عرفت فيه من زمان كنت وفّرت على نفسي صرف كثير."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     COMPARISON (REAL vs MINOXIDIL)
+     ============================================ -->
+<section class="section section-paper">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-mark">✦</div><div class="ornament-line"></div></div>
+    <p class="eyebrow">المقارنة</p>
+    <h2 class="section-title">لماذا <span class="script">Rapunzel</span><br>وليس <em>Minoxidil؟</em></h2>
+    <p class="section-intro">مقارنة حقيقية — Minoxidil هو العلاج الأشهر في السوق، لكنه ليس الأفضل.</p>
+  </div>
+
+  <div class="comp-wrap reveal">
+    <div class="comp-header">
+      <div class="comp-h feat">الميزة</div>
+      <div class="comp-h us">
+        <div class="comp-logo">R</div>
+        Rapunzel
+      </div>
+      <div class="comp-h them">
+        <div class="comp-them-logo"><img src="images/minoxidil.webp" alt="Minoxidil"></div>
+        Minoxidil
+      </div>
+    </div>
+    <div class="comp-body">
+      <div class="comp-row">
+        <div class="comp-cell feat">المصدر</div>
+        <div class="comp-cell us">نباتي 100% 🌿</div>
+        <div class="comp-cell them">كيميائي</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell feat">آثار جانبية</div>
+        <div class="comp-cell us"><span class="mark">✓</span>&nbsp;لا يوجد</div>
+        <div class="comp-cell them">حكة · احمرار · جفاف</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell feat">آمن للحوامل</div>
+        <div class="comp-cell us"><span class="mark">✓</span></div>
+        <div class="comp-cell them"><span class="mark">✗</span></div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell feat">يعمل على DHT</div>
+        <div class="comp-cell us"><span class="mark">✓</span></div>
+        <div class="comp-cell them"><span class="mark">✗</span></div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell feat">نتائج بعد التوقف</div>
+        <div class="comp-cell us">تستمر ✓</div>
+        <div class="comp-cell them">التساقط يرجع</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell feat">رائحة وملمس</div>
+        <div class="comp-cell us">خفيف · عطر طبيعي</div>
+        <div class="comp-cell them">لزج · دون رائحة</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell feat">ضمان استرداد</div>
+        <div class="comp-cell us"><span class="mark">✓</span>&nbsp;7 أيام</div>
+        <div class="comp-cell them"><span class="mark">✗</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FAQ
+     ============================================ -->
+<section class="section section-cream-2">
+  <div class="reveal">
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-mark">✦</div><div class="ornament-line"></div></div>
+    <p class="eyebrow">أسئلة شائعة</p>
+    <h2 class="section-title">كل ما <span class="script">تحتاجين</span> معرفته</h2>
+  </div>
+
+  <div class="faq-list reveal-stagger">
+    <div class="faq-item">
+      <div class="faq-q">متى أرى نتائج حقيقية؟</div>
+      <div class="faq-a">معظم عميلاتنا يلاحظن تقلّص التساقط خلال <b>أسبوعين فقط</b>. النتائج الكاملة — من حيث الكثافة والنمو الجديد — تظهر بعد <b>6–8 أسابيع</b> من الاستخدام اليومي المنتظم.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">هل يناسب شعري إذا كان صبغ / معالج حرارياً؟</div>
+      <div class="faq-a">نعم — Rapunzel يعمل على <b>فروة الرأس والبصيلات</b>، لا على جذع الشعرة نفسها. فهو آمن تماماً مع الشعر المصبوغ، المعالج بالكيراتين، أو المعالج حرارياً. بل قد يساعد في إصلاح الضرر أيضاً.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">كيف أستخدمه بالضبط؟</div>
+      <div class="faq-a">رشّي الكمية على فروة الرأس الجافة أو المبلّلة — يفضّل بعد الاستحمام. <b>دلّكي بلطف لمدة دقيقتين.</b> لا تشطفي. استخدمي يومياً في الليل للحصول على أفضل نتيجة. بعد 8 أسابيع، استخدمي مرة أو مرتين في الأسبوع كصيانة.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">هل فيه مواد كيميائية ضارة؟</div>
+      <div class="faq-a">إطلاقاً. Rapunzel من Lola Cosmetics البرازيلية — مكوناته <b>نباتية 100%</b>، خالي من البارابين والسلفات، معتمد عضوياً ومختبر دِرمِيّاً. آمن للاستخدام اليومي حتى للحوامل والمرضعات.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">ماذا لو ما حبّيته؟</div>
+      <div class="faq-a">لدينا <b>ضمان استرداد كامل لمدة 7 أيام</b> من تاريخ الاستلام. إذا لم تكوني راضية لأي سبب كان — تواصلي معنا واستردّي كامل مبلغك <b>بدون أي شروط</b> وبدون أسئلة.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">متى يصلني الطلب؟</div>
+      <div class="faq-a">سيتصل بكِ فريقنا <b>خلال ساعة</b> من تأكيد الطلب للتحقق من العنوان. بعد التأكيد، تُشحن طلبيتكِ وتصلكِ خلال <b>2–5 أيام عمل</b> لجميع مناطق ليبيا.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">هل الدفع فعلاً عند الاستلام؟</div>
+      <div class="faq-a">نعم — الدفع عند الاستلام فقط. <b>لا نطلب منكِ أي بطاقة ائتمان أو تحويل مسبق.</b> تستلمين طلبكِ أولاً، تفحصينه، وتدفعين كاش للمندوب. لا مخاطرة إطلاقاً.</div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY BAR -->
+<div class="urgency-wrap">
+  <div class="urgency-bar reveal">
+    <span class="urgency-icon">⚠️</span>
+    <p class="urgency-text">الكمية المخصصة لليبيا محدودة — <b>تنفد كل أسبوع.</b> لا تخسري فرصة العرض!</p>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div style="padding:0 20px 32px;">
+  <button class="btn-primary pulse reveal" onclick="scrollToOrder()">
+    🌿 اطلبي Rapunzel الآن — دفع عند الاستلام
+  </button>
+</div>
+
+<!-- ============================================
+     GUARANTEE
+     ============================================ -->
+<section class="section section-forest">
+  <div class="guarantee-inner reveal">
+    <div class="guarantee-shield">🛡️</div>
+    <h3 class="guarantee-title">ضمان <span class="script">7 أيام</span> — المخاطرة علينا</h3>
+    <p class="guarantee-text">
+      نحن واثقون 100% من Rapunzel. إذا لم تكوني راضية خلال 7 أيام من الاستلام لأي سبب كان — <b>سنسترد لكِ كامل مبلغكِ</b> بدون أسئلة وبدون شروط. أنتِ الوحيدة التي تخسر إذا لم تجرّبيه.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">Rapunzel</div>
+  <p class="footer-tagline">— السر البرازيلي لشعر يغار منه الجميع —</p>
+  <div class="footer-badges">
+    <span class="footer-badge">🌿 VEGAN</span>
+    <span class="footer-badge">🔬 DERMATOLOGIST TESTED</span>
+    <span class="footer-badge">🇧🇷 MADE IN BRAZIL</span>
+  </div>
+  <p class="footer-text">© 2025 Rapunzel — جميع الحقوق محفوظة · ليبيا</p>
+</footer>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <button class="sticky-cta-btn" onclick="scrollToOrder()">
+    🌿 اطلبي Rapunzel — <em>دفع عند الاستلام</em>
+  </button>
+</div>
+
+<!-- LIVE NOTIFICATION -->
+<div class="live-notif" id="live-notif">
+  <button class="live-notif-close" onclick="document.getElementById('live-notif').classList.remove('show')">×</button>
+  <div class="live-notif-icon">✓</div>
+  <div>
+    <div class="live-notif-text" id="notif-text"></div>
+    <div class="live-notif-time" id="notif-time"></div>
+  </div>
+</div>
+
+<!-- EXIT INTENT MODAL -->
+<div class="exit-modal" id="exit-modal">
+  <div class="exit-card">
+    <button class="exit-close" onclick="closeExit()">×</button>
+    <p class="exit-eyebrow">✦ انتظري لحظة ✦</p>
+    <h3 class="exit-title">قبل ما تطلعين —<br><em>مكافأة خاصة لكِ</em></h3>
+    <p class="exit-sub">إذا أكّدتِ طلبكِ الآن، سنمنحكِ:</p>
+    <div class="exit-perks">
+      <div class="exit-perk"><span class="exit-perk-icon">⚡</span><span class="exit-perk-text"><b>شحن سريع خلال 24 ساعة</b><br><small>بدلاً من 2–5 أيام</small></span></div>
+      <div class="exit-perk"><span class="exit-perk-icon">🛡️</span><span class="exit-perk-text"><b>ضمان مضاعف — 14 يوم</b><br><small>بدلاً من 7 أيام</small></span></div>
+    </div>
+    <p class="exit-sub-2">العرض متاح لمن تكمل طلبها في الدقائق القادمة فقط</p>
+    <button class="exit-btn" onclick="applyExitOffer()">✨ اطلبي الآن مع المكافأة</button>
+    <button class="exit-no" onclick="closeExit()">لا شكراً، لا أريد المكافأة</button>
+  </div>
+</div>
+
+<script>
+/* ============================================
+   BUNDLES
+   ============================================ */
+var bundles = {
+  1:{qty:1,price:189,sku:'RAPUNZEL-1X',product:'Rapunzel × 1',summary:'Rapunzel × 1'},
+  2:{qty:3,price:289,sku:'RAPUNZEL-2X1FREE',product:'Rapunzel × 2 + 1 مجاناً',summary:'Rapunzel × 2 + 1 مجاناً'},
+  3:{qty:5,price:389,sku:'RAPUNZEL-3X2FREE',product:'Rapunzel × 3 + 2 مجاناً',summary:'Rapunzel × 3 + 2 مجاناً'}
+};
+var selectedBundle=2;
+var bonusApplied=false;
+
+function scrollToOrder(){
+  document.getElementById('order-form').scrollIntoView({behavior:'smooth'});
+  firePixel('InitiateCheckout');
+}
+
+function selectBundle(n){
+  selectedBundle=n;
+  [1,2,3].forEach(function(i){
+    document.getElementById('b'+i).classList.remove('selected');
+    document.getElementById('c'+i).innerHTML='';
+  });
+  document.getElementById('b'+n).classList.add('selected');
+  document.getElementById('c'+n).innerHTML='✓';
+  updateSummary();
+}
+
+function updateSummary(){
+  var bd=bundles[selectedBundle];
+  document.getElementById('s-product').textContent=bd.summary;
+  document.getElementById('s-total').textContent=bd.price+' د.ل';
+}
+
+function firePixel(event,data){
+  // Meta Pixel
+  if(typeof fbq!='undefined'){
+    if(data) fbq('track',event,data);
+    else fbq('track',event);
+  }
+  // TikTok Pixel
+  if(typeof ttq!='undefined'){
+    var ttMap={
+      'ViewContent':'ViewContent',
+      'AddToCart':'AddToCart',
+      'InitiateCheckout':'InitiateCheckout',
+      'Purchase':'Purchase'
+    };
+    var ttEvent=ttMap[event];
+    if(ttEvent){
+      if(data) ttq.track(ttEvent,{value:data.value,currency:data.currency});
+      else ttq.track(ttEvent);
+    }
+    // Also fire CompletePayment for Purchase (TikTok legacy support)
+    if(event==='Purchase'){
+      if(data) ttq.track('CompletePayment',{value:data.value,currency:data.currency});
+      else ttq.track('CompletePayment');
+    }
+  }
+  // Snapchat Pixel
+  if(typeof snaptr!='undefined'){
+    var snapMap={
+      'ViewContent':'VIEW_CONTENT',
+      'AddToCart':'ADD_CART',
+      'InitiateCheckout':'START_CHECKOUT',
+      'Purchase':'PURCHASE'
+    };
+    var snapEvent=snapMap[event];
+    if(snapEvent){
+      if(data) snaptr('track',snapEvent,{price:data.value,currency:data.currency});
+      else snaptr('track',snapEvent);
+    }
+  }
+}
+
+/* ============================================
+   UTM PARAMS
+   ============================================ */
+function getUTM(){
+  var p=new URLSearchParams(window.location.search);
+  return{
+    utm_source:p.get('utm_source')||'',
+    utm_medium:p.get('utm_medium')||'',
+    utm_campaign:p.get('utm_campaign')||'',
+    utm_term:p.get('utm_term')||'',
+    utm_content:p.get('utm_content')||''
+  };
+}
+
+/* ============================================
+   SUBMIT ORDER
+   ============================================ */
+function submitOrder(){
+  var name=document.getElementById('f-name').value.trim();
+  var phone=document.getElementById('f-phone').value.trim();
+  var city=document.getElementById('f-city').value;
+  var address=document.getElementById('f-address').value.trim();
+  if(!name||!phone||!city||!address){
+    alert('يرجى ملء جميع الحقول المطلوبة');
+    return;
+  }
+  var bd=bundles[selectedBundle];
+  firePixel('Purchase',{value:bd.price,currency:'LYD'});
+  document.getElementById('form-content').style.display='none';
+  document.getElementById('success-box').style.display='block';
+  window.scrollTo({top:document.getElementById('order-form').offsetTop-60,behavior:'smooth'});
+  var utm=getUTM();
+  var notes=sessionStorage.getItem('bonus_applied')?'BONUS: Fast shipping 24h + 14-day guarantee':'';
+  fetch('https://script.google.com/macros/s/AKfycbye-NBe0MAgt0hc2uIJ6-4sZs9TmwX951TLuLud-LDLumkbrGKtiVFD6WCGbWcGrsNxhA/exec',{
+    method:'POST',
+    mode:'no-cors',
+    headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body:JSON.stringify({
+      OrderDate:new Date().toISOString(),
+      country:'LY',
+      name:name,phone:phone,
+      address:city+' — '+address,
+      url:window.location.href,
+      sku:bd.sku,
+      Product:bd.product,
+      quantity:bd.qty,
+      price:bd.price,
+      currency:'LYD',
+      notes:notes,
+      utm_source:utm.utm_source,
+      utm_medium:utm.utm_medium,
+      utm_campaign:utm.utm_campaign,
+      utm_term:utm.utm_term,
+      utm_content:utm.utm_content,
+      national_address:address
+    })
+  }).catch(function(){});
+}
+
+/* ============================================
+   REVEAL ON SCROLL
+   ============================================ */
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+  });
+},{threshold:0.12});
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(function(r){io.observe(r);});
+
+/* ============================================
+   FAQ ACCORDION
+   ============================================ */
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    var item=q.parentElement;
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});
+    if(!isOpen) item.classList.add('open');
+  });
+});
+
+/* ============================================
+   COUNTDOWN (24H localStorage)
+   ============================================ */
+(function(){
+  var KEY='rapunzel_cd_end';
+  var end=localStorage.getItem(KEY);
+  var now=Date.now();
+  if(!end||parseInt(end)<now){
+    end=now+24*60*60*1000;
+    localStorage.setItem(KEY,end);
+  } else {
+    end=parseInt(end);
+  }
+  function tick(){
+    var diff=Math.max(0,end-Date.now());
+    var h=Math.floor(diff/3600000);
+    var m=Math.floor((diff%3600000)/60000);
+    var s=Math.floor((diff%60000)/1000);
+    document.getElementById('cd-h').textContent=String(h).padStart(2,'0');
+    document.getElementById('cd-m').textContent=String(m).padStart(2,'0');
+    document.getElementById('cd-s').textContent=String(s).padStart(2,'0');
+    if(diff<=0){
+      end=Date.now()+24*60*60*1000;
+      localStorage.setItem(KEY,end);
+    }
+  }
+  tick();setInterval(tick,1000);
+})();
+
+/* ============================================
+   LIVE ORDER NOTIFICATIONS
+   ============================================ */
+var notifications=[
+  {name:'فاطمة',city:'طرابلس',bundle:'عرض ٢ + ١ مجاناً',time:'قبل دقيقتين'},
+  {name:'سارة',city:'بنغازي',bundle:'عرض ٣ + ٢ مجاناً',time:'قبل 4 دقائق'},
+  {name:'نورة',city:'مصراتة',bundle:'عرض ٢ + ١ مجاناً',time:'قبل 7 دقائق'},
+  {name:'منى',city:'الزاوية',bundle:'عرض ٢ + ١ مجاناً',time:'قبل 12 دقيقة'},
+  {name:'هند',city:'طرابلس',bundle:'عرض ٣ + ٢ مجاناً',time:'قبل 15 دقيقة'},
+  {name:'ريم',city:'سبها',bundle:'عرض ٢ + ١ مجاناً',time:'قبل 18 دقيقة'},
+  {name:'أسماء',city:'طرابلس',bundle:'عرض ٢ + ١ مجاناً',time:'قبل 22 دقيقة'},
+  {name:'دانة',city:'بنغازي',bundle:'عرض ٣ + ٢ مجاناً',time:'قبل 27 دقيقة'}
+];
+var notifIndex=0;
+function showNotification(){
+  var n=notifications[notifIndex%notifications.length];
+  notifIndex++;
+  document.getElementById('notif-text').innerHTML='<em>'+n.name+'</em> من '+n.city+' طلبت '+n.bundle;
+  document.getElementById('notif-time').textContent=n.time+' · ✓ طلب مؤكد';
+  document.getElementById('live-notif').classList.add('show');
+  setTimeout(function(){document.getElementById('live-notif').classList.remove('show');},5000);
+}
+setTimeout(showNotification,8000);
+setInterval(showNotification,22000);
+
+/* ============================================
+   STOCK COUNTER DECREASES
+   ============================================ */
+(function(){
+  var stock=23;
+  setInterval(function(){
+    if(stock>8&&Math.random()<0.3){
+      stock--;
+      document.getElementById('stock-n').textContent=stock;
+      var pct=(stock/100)*100;
+      document.getElementById('stock-fill').style.width=pct+'%';
+    }
+  },45000);
+})();
+
+/* ============================================
+   EXIT INTENT / TIME-BASED INTENT
+   ============================================ */
+var exitShown=false;
+var userInteracted=false; // Tracks if user clicked any CTA
+var maxScrollPct=0;
+
+// Track user engagement — if they interact, don't show popup
+document.querySelectorAll('.btn-primary,.submit-btn,.h-btn,.sticky-cta-btn,.bundle').forEach(function(el){
+  el.addEventListener('click',function(){userInteracted=true;});
+});
+// Form input counts as interaction too
+['f-name','f-phone','f-city','f-address'].forEach(function(id){
+  var el=document.getElementById(id);
+  if(el) el.addEventListener('focus',function(){userInteracted=true;});
+});
+
+function showExit(){
+  if(exitShown) return;
+  if(userInteracted) return; // Don't interrupt engaged users
+  if(sessionStorage.getItem('exit_shown')) return;
+  exitShown=true;
+  sessionStorage.setItem('exit_shown','1');
+  document.getElementById('exit-modal').classList.add('show');
+  firePixel('ViewContent'); // Track popup shown
+}
+function closeExit(){document.getElementById('exit-modal').classList.remove('show');}
+function applyExitOffer(){
+  // Store flag — backend will honor 14-day guarantee + fast shipping for this order
+  sessionStorage.setItem('bonus_applied','1');
+  closeExit();
+  scrollToOrder();
+}
+
+// Desktop: mouse leaves top of window
+document.addEventListener('mouseout',function(e){
+  if(e.clientY<=0&&!e.relatedTarget){showExit();}
+});
+
+// Track max scroll for mobile trigger
+window.addEventListener('scroll',function(){
+  var h=document.documentElement;
+  var pct=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
+  if(pct>maxScrollPct) maxScrollPct=pct;
+});
+
+// Mobile: time-based trigger after 40s if they've scrolled >40% and not interacted
+setTimeout(function(){
+  if(maxScrollPct>=40&&!userInteracted){showExit();}
+},40000);
+
+// Mobile: back button detection (pushState trick)
+history.pushState(null,null,location.href);
+window.addEventListener('popstate',function(){
+  if(!exitShown){
+    history.pushState(null,null,location.href);
+    showExit();
+  }
+});
+
+/* ============================================
+   SCROLL DEPTH TRACKING (for Meta optimization)
+   ============================================ */
+var scrollMilestones={25:false,50:false,75:false,100:false};
+window.addEventListener('scroll',function(){
+  var h=document.documentElement;
+  var pct=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
+  Object.keys(scrollMilestones).forEach(function(m){
+    if(!scrollMilestones[m]&&pct>=parseInt(m)){
+      scrollMilestones[m]=true;
+      firePixel('ScrollDepth_'+m);
+    }
+  });
+});
+
+/* Init */
+updateSummary();
+</script>
+</body>
+</html>
